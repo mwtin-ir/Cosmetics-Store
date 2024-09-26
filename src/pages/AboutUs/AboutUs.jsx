@@ -1,10 +1,13 @@
 import React from 'react';
+import { Header , Footer} from '../../components';
 
 const AboutUs = () => {
     return (
-        <div>
+        <>
+            <Header />
             AboutUs
-        </div>
+            <Footer />
+        </>
     );
 }
 

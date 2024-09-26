@@ -1,10 +1,13 @@
 import React from 'react';
+import { Header , Footer} from '../../components';
 
 const ProductDetail = () => {
     return (
-        <div>
+        <>
+            <Header />
             ProductDetail
-        </div>
+            <Footer />
+        </>
     );
 }
 
