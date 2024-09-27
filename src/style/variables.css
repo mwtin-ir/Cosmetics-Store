@@ -1,0 +1,5 @@
+@import url("./fonts.css");
+:root {
+  --Primary-font: PrimaryFont;
+  --Secend-font: SecendFont;
+}
