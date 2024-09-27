@@ -1,0 +1,14 @@
+.home-bg {
+  height: 100vh;
+  background:linear-gradient(180deg ,#000000a9 0%, rgba(0,0,0,0.2) 100% ), url("../../images/bg-01-free-img.jpg") no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: 999;
+}
+.about-bg {
+  background:linear-gradient(0deg ,#269fb7 0%, rgba(0, 0, 0, 0.8) ), url("../../images/bg-05-free-img.jpg") no-repeat center center;
+  background-size: cover;
+  z-index: 999;
+  width: 100%;
+  aspect-ratio: 16 / 4.1;
+}
