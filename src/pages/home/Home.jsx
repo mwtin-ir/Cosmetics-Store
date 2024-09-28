@@ -38,14 +38,14 @@ const Home = () => {
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-[25px]  items-center justify-center p-2">
             {products.map((product) => (
-              <NavLink to={`/products/${product.id}`} key={product.id}>
-                <Card
-                  image={product.image}
-                  price={product.price}
-                  title={product.title}
-                  category={product.category}
-                />
-              </NavLink>
+              <Card
+                image={product.image}
+                price={product.price}
+                title={product.title}
+                category={product.category}
+                key={product.id}
+                id={product.id}
+              />
             ))}
           </div>
         </section>
@@ -218,13 +218,13 @@ const Home = () => {
           <h1 className="text-[26px] w-[80%] lg:text-[40px] lg:w-[40%] font-bold">
             Sign-up the Makeup Fan Club
           </h1>
-          <div className="flex flex-col gap-[15px] lg:w-[50%] w-[90%]">
+          <div className="flex flex-col gap-[15px] lg:w-[50%] w-[90%] ">
             <input
               type="text"
-              className="w-[100%] p-4  border border-gray-300 rounded outline-none "
+              className="w-[100%] p-3  border border-gray-300 rounded outline-none "
               placeholder="Enter your email address"
             />
-            <button className="px-6 py-4 text-center w-[180px] bg-[#269fb7] text-white">
+            <button className="px-5 py-2.5 text-center w-[180px] bg-[#269fb7] text-white">
               saubscribe
             </button>
           </div>

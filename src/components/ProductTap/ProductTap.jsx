@@ -1,6 +1,6 @@
 import React from "react";
-import Tab from "react-bootstrap/Tab";
-import Tabs from "react-bootstrap/Tabs";
+import { Tab, Tabs } from "react-bootstrap";
+
 import { IoIosStarOutline } from "react-icons/io";
 
 export function ProductTap() {
