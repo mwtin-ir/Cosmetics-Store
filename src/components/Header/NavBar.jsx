@@ -23,9 +23,9 @@ export default function NavBar({ logoClassName, logo, navText }) {
       >
         <NavLink to="/"> HOME</NavLink>
         <NavLink to="/productList"> SHOP</NavLink>
-        <NavLink to="/"> Testimonials</NavLink>
+        <NavLink to="/testimonials"> Testimonials</NavLink>
         <NavLink to="/about-us"> ABOUT</NavLink>
-        <NavLink to="/"> CONTACT</NavLink>
+        <NavLink to="/contact"> CONTACT</NavLink>
         <HiShoppingBag className="text-[26px]" />
         <span className="p-[2px] rounded-full  bg-white text-black absolute -top-2 -right-[7px]  text-[12px]">
           0
