@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import { Header, Footer } from "../../components";
+import { Header, Footer, ProductModal, ProductTap } from "../../components";
 import { IoIosSearch } from "react-icons/io";
 import useZoomed from "./Hooks/useZoomed";
-import ProductModal from "./ProductModal/ProductModal";
-import ProductTap from "./ProductTap/ProductTap";
+
 
 
 import "./ProductDetail.css";
@@ -84,6 +83,7 @@ const ProductDetail = () => {
                 <div className="quantity">
                   <input
                     className=" md:w-[3.631em] h-[35px] text-center border border-gray-400 outline-none p-[0.3em]"
+                    placeholder={1}
                     type="number"
                     autoComplete="off"
                     step={1}

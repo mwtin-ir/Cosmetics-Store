@@ -3,7 +3,7 @@ import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import { IoIosStarOutline } from "react-icons/io";
 
-export default function ProductTap() {
+export function ProductTap() {
   return (
     <div>
       <Tabs

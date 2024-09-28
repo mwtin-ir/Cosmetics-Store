@@ -24,19 +24,25 @@ const ProductList = () => {
                         </div>
                     </div>
                     <div className='p-5 grid grid-cols-3 md:grid-cols-4 gap-4'>
-                        <Card image={"/images/products/given-skin-toner-300x300.jpg"}
+                        <Card
+                        id={1}
+                        image={"/images/products/given-skin-toner-300x300.jpg"}
                         category={"Paste Masks"}
                         title={"Anti-aging Skin Toner"}
                         price={40.00}
                         stars={4}/>
 
-                        <Card image={"/images/products/given-skin-toner-300x300.jpg"}
+                        <Card 
+                        id={1}
+                        image={"/images/products/given-skin-toner-300x300.jpg"}
                         category={"Paste Masks"}
                         title={"Anti-aging Skin Toner"}
                         price={40.00}
                         stars={2}/>
 
-                        <Card image={"/images/products/given-skin-toner-300x300.jpg"}
+                        <Card 
+                        id={1}
+                        image={"/images/products/given-skin-toner-300x300.jpg"}
                         category={"Paste Masks"}
                         title={"Anti-aging Skin Toner"}
                         price={40.00}
