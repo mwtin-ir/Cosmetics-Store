@@ -5,7 +5,7 @@ import { CiStar } from "react-icons/ci";
 export const Card = ({image, category, title, price, stars}) => {
     let totlaStar = 5;
     return (
-        <div className='text-left'>
+        <div className='text-left cursor-pointer'>
             <img src={image} alt="" />
             <p className='text-gray-400 text-sm'>{category}</p>
             <p className='text-lg font-medium'>{title}</p>
