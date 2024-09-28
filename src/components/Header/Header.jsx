@@ -41,6 +41,9 @@ export const Header = () => {
         </header>
       );
     default:
+      return (
+        <NavBar logo="logo.png" logoClassName="bg-white" navText="text-bleck" />
+      );
       break;
   }
 };

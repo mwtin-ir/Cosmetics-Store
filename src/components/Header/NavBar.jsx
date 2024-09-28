@@ -10,7 +10,7 @@ export default function NavBar({ logoClassName, logo, navText }) {
       <div className={` ${logoClassName} flex items-center justify-center   `}>
       <Link className='w-[100%]' to='/'>
       <img
-          src={`./images/${logo ? logo : "white-logo.png"}`}
+          src={`/images/${logo ? logo : "white-logo.png"}`}
           alt="logo"
           className="p-1 w-[100%]"
         />

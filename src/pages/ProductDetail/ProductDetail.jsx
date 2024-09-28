@@ -20,8 +20,8 @@ const ProductDetail = () => {
   return (
     <>
       <Header />
-      <section className="product-page h-auto   my-20 bg-[#f7f7f7]">
-        <div className="container  bg-[#ffffff]  m-auto px-4">
+      <section className="product-page h-auto   py-20 bg-[#f7f7f7]">
+        <div className="container  bg-[#ffffff]  m-auto p-4">
           <div className="row gap-x-4">
             <div className="left grid-cols-12 md:flex-1">
               <div className="left-pic relative" onClick={handleImageClick}>
