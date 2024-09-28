@@ -213,7 +213,7 @@ const Home = () => {
             </NavLink>
           ))}
       </div>
-      <section className="seaction-4-bg mt-[100px]">
+      <section className="seaction-4-bg my-[100px]">
         <div className="flex flex-col lg:flex-row items-center lg:w-[70%] mx-auto">
           <h1 className="text-[26px] w-[80%] lg:text-[40px] lg:w-[40%] font-bold">
             Sign-up the Makeup Fan Club
