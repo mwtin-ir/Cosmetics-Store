@@ -4,7 +4,7 @@ import { Header , Footer} from '../../components';
 const ProductDetail = () => {
     return (
         <>
-            <Header />
+            <Header />g
             ProductDetail
             <Footer />
         </>
