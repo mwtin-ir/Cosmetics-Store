@@ -1,6 +1,10 @@
 import React, { useState } from "react";
-import { Header, Footer, ProductModal, ProductTap, useZoomed} from "../../components";
+import { Header, Footer,useZoomed,ProductModal} from "../../components";
 import { IoIosSearch } from "react-icons/io";
+import ProductTap from "../../components/ProductTap/ProductTap";
+
+
+
 
 
 
