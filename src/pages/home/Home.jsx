@@ -14,9 +14,9 @@ import "swiper/css/pagination";
 const Home = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    // axios.get("http://localhost:4000/products").then(({ data }) => {
-    //   setProducts(data);
-    // });
+    axios.get("http://localhost:4000/products").then(({ data }) => {
+      setProducts(data);
+    });
   }, []);
   return (
     <>

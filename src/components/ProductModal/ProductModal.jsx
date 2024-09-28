@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import useZoomed from "../Hooks/useZoomed";
+import { useZoomed } from "../Hooks/useZoomed";
 
 export function ProductModal({ isOpen, onClose }) {
   const [isZoomed, handleMouseMove, handleImageClick, mousePosition] =

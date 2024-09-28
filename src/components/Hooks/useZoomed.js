@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 
-export default function useZoomed() {
+export function useZoomed() {
 
     
     const [isZoomed, setIsZoomed] = useState(false); // حالت زوم فعال
