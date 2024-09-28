@@ -5,7 +5,7 @@ import { useLocation } from "react-router-dom";
 import NavBar from "./NavBar";
 export const Header = () => {
   const { pathname } = useLocation();
-  console.log(pathname);
+
   switch (pathname) {
     case "/":
       return (

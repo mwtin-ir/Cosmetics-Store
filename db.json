@@ -1,0 +1,13 @@
+{
+  "products": [
+    { "id": 1, "image": "./images/products/beauty-cream-400x400.jpg", "price": 285000,"category":"Paste Masks","title":"Anti-aging Skin Toner" },
+    { "id": 2, "image": "./images/products/coco-body-oil-400x400.jpg", "price": 285000,"category":"Feminine Deodorants","title":"Coco Body Oil" },
+    { "id": 3, "image": "./images/products/daily-moisturizer-400x400.jpg", "price": 285000, "category":"Skin Fresheners","title":"Daily Moisturiser"},
+    { "id": 4, "image": "./images/products/deep-cleanser-400x400.jpg", "price": 285000,"category":"Skin Milk","title":"Deep Cleanser" },
+    { "id": 5, "image": "./images/products/given-skin-toner-300x300.jpg", "price": 285000,"category":"Balms","title":"Night Care Cream" },
+    { "id": 6, "image": "./images/products/night-care-cream-400x400.jpg", "price": 285000,"category":"Face Cream" ,"title":"Rose Essential Oil"},
+    { "id": 7, "image": "./images/products/rose-essential-oil-400x400.jpg", "price": 285000,"category":"Anti-aging Cream","title":"Shaving Kit" },
+    { "id": 8, "image": "./images/products/shaving-kit-400x400.jpg", "price": 285000,"category":"Skin Toner","title":"Skin Whitening Toner" }
+
+  ]
+}

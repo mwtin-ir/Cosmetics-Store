@@ -1,0 +1,56 @@
+.seaction-2-bg {
+  background: #f0f0f04e;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.seaction-3-bg{
+    background: url('../../images/bg-03-free-img.png') no-repeat center center    ;
+
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+
+}
+@media screen and (min-width: 1024px) {
+  .seaction-2-bg {
+    background: url("../../images/bg-02-free-img.jpg") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    min-height: 550px;
+  }
+  .seaction-3-bg{
+    background: url('../../images/bg-03-free-img.png') no-repeat center center ;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 80vh;
+}
+/* .seaction-4-bg{
+    background:url('../../images/bg-overlay-01-free-img.png') no-repeat center center;
+    background-size: cover ;
+    width: 100%;
+    height: 40vh;
+} */
+}
+
