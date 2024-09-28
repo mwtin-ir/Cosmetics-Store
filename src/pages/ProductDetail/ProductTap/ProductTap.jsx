@@ -1,26 +1,67 @@
 import React from "react";
-import Tab from "react-bootstrap/Tab";
-import Tabs from "react-bootstrap/Tabs";
+
 import { IoIosStarOutline } from "react-icons/io";
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import Box from '@mui/material/Box';
+import PropTypes from 'prop-types';
+
+function CustomTabPanel(props) {
+  const { children, value, index, ...other } = props;
+
+  return (
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`simple-tabpanel-${index}`}
+      aria-labelledby={`simple-tab-${index}`}
+      {...other}
+    >
+      {value === index && <Box sx={{ p: 3 }}>{children}</Box>}
+    </div>
+  );
+}
+CustomTabPanel.propTypes = {
+  children: PropTypes.node,
+  index: PropTypes.number.isRequired,
+  value: PropTypes.number.isRequired,
+};
+
+function a11yProps(index) {
+  return {
+    id: `simple-tab-${index}`,
+    'aria-controls': `simple-tabpanel-${index}`,
+  };
+}
 
 export default function ProductTap() {
+
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+  
   return (
     <div>
-      <Tabs
-        defaultActiveKey="profile"
-        id="uncontrolled-tab-example"
-        className="mb-3 mt-20"
-      >
-        <Tab eventKey="description" title="Description">
-          <p className="p-20">
+
+<Box sx={{ width: '100%' }} className="mt-20">
+      <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
+          <Tab label="Descriptions" {...a11yProps(0)} />
+          <Tab label="Reviews" {...a11yProps(1)} />
+        </Tabs>
+      </Box>
+      <CustomTabPanel value={value} index={0}>
+      <p className="p-20">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
             tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.Lobortis
             imperdiet, excepteur accumsan deserunt, dicta reprehenderit
             vestibulum, vero aspernatur pede duis tempus taciti.
           </p>
-        </Tab>
-        <Tab eventKey="reviews" title="Reviews">
-          <div className="flex flex-col items-start gap-4 w-full">
+      </CustomTabPanel>
+      <CustomTabPanel value={value} index={1}>
+      <div className="flex flex-col items-start gap-4 w-full">
             <h2>There are no reviews yet.</h2>
             <div className="review-container border border-gray-500 p-4 w-full flex flex-col justify-start items-start gap-3">
               <h1 className="text-2xl">Be the first to review “Anti-aging Skin Toner”</h1>
@@ -94,8 +135,8 @@ export default function ProductTap() {
               </form>
             </div>
           </div>
-        </Tab>
-      </Tabs>
+      </CustomTabPanel>
+    </Box>
     </div>
   );
 }
