@@ -11,7 +11,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
 const Home = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
@@ -120,7 +119,6 @@ const Home = () => {
                 spaceBetween: 20,
               },
             }}
-            // modules={[Pagination]}
             className="mySwiper"
           >
             <SwiperSlide>
