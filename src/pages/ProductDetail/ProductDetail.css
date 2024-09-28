@@ -1,0 +1,27 @@
+
+  
+  .image-wrapper {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: background-position 0.3s ease-in-out;
+  }
+  
+
+  .zoomed .zoom-image {
+    transform: scale(2); /* مقدار زوم */
+  }
+
+
+
+ 
+  
+
+  
+ 
+  
+
+  
+  .zoomed .modal-image {
+    transform: scale(2); /* مقدار زوم */
+  }
