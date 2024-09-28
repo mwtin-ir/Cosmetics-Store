@@ -16,7 +16,7 @@ export const Card = ({ id, image, category, title, price, stars }) => {
           {Array(5)
             .fill(null)
             .map((_, index) =>
-              stars > index ? <FaStar /> : <CiStar key={crypto.randomUUID()} />
+              stars > index ? <FaStar key={crypto.randomUUID()} /> : <CiStar key={crypto.randomUUID()} />
             )}
         </div>
       </Link>

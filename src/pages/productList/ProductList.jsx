@@ -13,13 +13,13 @@ const ProductList = () => {
                     <div className='flex justify-between items-center text-gray-700 font-medium lg:text-xl'>
                         <div>Showing all 8 results</div>
                         <div>
-                            <select name="productListOrderby" class="productListOrderby" aria-label="Shop order">
-                                <option value="menu_order" selected="selected">Default sorting</option>
-                                <option value="popularity">Sort by popularity</option>
-                                <option value="rating">Sort by average rating</option>
-                                <option value="date">Sort by latest</option>
-                                <option value="price">Sort by price: low to high</option>
-                                <option value="price-desc">Sort by price: high to low</option>
+                            <select name="productListOrderby" className="productListOrderby" aria-label="Shop order">
+                                <option defaultValue="menu_order" value="selected">Default sorting</option>
+                                <option defaultValue="popularity">Sort by popularity</option>
+                                <option defaultValue="rating">Sort by average rating</option>
+                                <option defaultValue="date">Sort by latest</option>
+                                <option defaultValue="price">Sort by price: low to high</option>
+                                <option defaultValue="price-desc">Sort by price: high to low</option>
                             </select>
                         </div>
                     </div>
