@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export const Card = ({ id, image, category, title, price, stars }) => {
   // let totlaStar = 5;
   return (
-    <div className="text-left cursor-pointer } h-[280px] lg:h-auto">
+    <div className="text-left cursor-pointer } h-[280px] sm:h-[380px] md:h-[480px] lg:h-auto">
       <Link to={`/products/${id}`} className="h-[280px] lg:h-auto">
         <img src={image} alt="" className="w-[100%]" />
         <p className="text-gray-400 text-sm">{category}</p>
